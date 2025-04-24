@@ -140,6 +140,15 @@ img{
     transition: .5s;
   }
 }
+.certificates__list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+}
+.certificates.section {
+  margin-top: 2rem;
+}
+
 .nav__item{
   margin-bottom: var(--mb-4);
 }
