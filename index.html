@@ -1,242 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Raveendra | Portfolio</title>
+</head>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link active">Experience</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#project" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#certificates" class="nav__link">Certifications</a></li>
+                    <li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hello,<br>I'm <span class="home__title-color">Raveendra</span><br>Java & Cloud Dev.</h1>
+            </div>
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/raveendra-eleven/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Raveendra11" class="home__social-icon"><i class='bx bxl-github'></i></a>
+            </div>
 
-        <title>My Portfolio</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#project" class="nav__link">Project</a></li>
-                        <li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
-                    </ul>
-                </div>
+            <div class="home__img">
+                <img src="assets/img/perfil.png" alt="Profile Picture">
+            </div>
+        </section>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Raveendra</span><br>Java & Cloud Dev.</h1>
-                </div>
-                    <!-- <a href="#" class="button">Contact</a> -->
-                
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/raveendra-eleven/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/Raveendra11?tab=repositories" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img"> 
-                    <img  src="assets/img/perfil.png" alt="">
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <p class="about__text">Hi, I am a job seeker with a sound knowledge on <b>Java Programming & Google Cloud</b> with <strong>Springboot</strong>.I can do Java Development with Springboot. 
-                            Here is my EmployeeManagement Springboot REST API project @ <a href="https://github.com/Raveendra11/EmployeeManagement">https://github.com/Raveendra11/EmployeeManagement</a></p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Programming Skills:</h2>
-                        <!-- <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p> -->
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <!-- <i class='bx bxl-html5 skills__icon'></i> -->
-                                <h3 class="skills__subtitle">Programming Languages:</h3>
-                                <span class="skills__name"> Java, J2ee, Spring, Springboot</span>
-                            </div>
-                            <!-- <div class="skills__bar skills__html">
-
-                            </div> -->
-                            <!-- <div>
-                                <span class="skills__percentage">95%</span>
-                            </div> -->
-                        </div>
-                        <div class="skills__data">
-                        <div class="skills__names">
-                            <!-- <i class='bx bxl-html5 skills__icon'></i> -->
-                            <h3 class="skills__subtitle">Web <br> Technologies:</h3>
-                            <span class="skills__name"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Html, Css, Javascript, React </span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <!-- <i class='bx bxl-html5 skills__icon'></i> -->
-                            <h3 class="skills__subtitle">Databases:</h3>
-                            <span class="skills__name">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  MySql </span>
-                        </div>
-                    </div>
-                        <!-- <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                     -->
-                      
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="About Image">
                 </div>
                 <div>
-                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    <p class="about__text">I'm a passionate developer with strong skills in <b>Java Programming</b> and <b>Google Cloud</b>, experienced in building REST APIs using <strong>Spring Boot</strong>. Explore my project: <a href="https://github.com/Raveendra11/EmployeeManagement" target="_blank">EmployeeManagement REST API</a>.</p>
                 </div>
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <!--===== WORK =====-->
-            <!-- <section class="project section" id="project">
-                <h2 class="section-title">Project</h2>
-                    <div>
-                        <h2 class="project__subtitle">PROJECT NAME: AN E-COMMERCE WEB APPLICATION FOR A SMALL RETAIL STORE</h2><br>
-                        <p class="project__text">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  The aim of this project to develop an e-commerce Java web application for a small retail store, where the
-                        store owner can sell goods over the internet. In the application, the admin will be able to manage products, customers,
-                        and orders, while the customers will be able to order and pay for products.Also, the buyers will have the opportunity to subscribe to an email list in
-                        order to get announcements about new arrivals and sales promotions. Furthermore, there
-                        will be an email notification after completing an order or subscribing to an email list.</p>           
-                    </div>
-                    <div>
-                        <img src="assets/img/project.jpg" alt="" class="skills__img" width="250px" height="200px">
-                    </div> -->
-<section class="project section" id="project">
-    <h2 class="section-title">Project</h2>
+        <!-- Full HTML document omitted for brevity -->
 
-    <div class="project__container bd-grid">
-        <div class="about__img">
-            <img src="assets/img/project.png" alt="">
+<!--===== EXPERIENCE =====-->
+<section class="experience section" id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="experience__container bd-grid">
+        <div class="experience__item">
+            <div class="experience__content">
+                <h3>INFOSYS</h3>
+                <p><strong>Associate Developer</strong><br>Apr 2024 – Jan 2025 | Bangalore, India</p>
+                <ul>
+                    <li><strong>Enhancement:</strong> Enabled policy management features via chatbot UI, improving user satisfaction.</li>
+                    <li><strong>Collaboration:</strong> Worked with Verizon stakeholders to break down features aligned with project goals.</li>
+                    <li><strong>Requirement Analysis:</strong> Documented chatbot requirements through design and demo specs.</li>
+                    <li><strong>Development:</strong> Built REST APIs using Java & Spring for chatbot functionalities.</li>
+                    <li><strong>Tests:</strong> Authored UTP, SITP, and integration reports for chatbot systems.</li>
+                </ul>
+            </div>
         </div>
+        <div class="experience__item" style="margin-bottom: 2rem;">
 
-        <div>
-            <h2 class="about__subtitle">AN E-COMMERCE WEB APPLICATION FOR A SMALL RETAIL STORE</h2>
-            <p class="about__text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The aim of this project to develop an
-            e-commerce Java web application for a small retail store, where the
-            store owner can sell goods over the internet. In the application, the admin will be able to manage products, customers,
-            and orders, while the customers will be able to order and pay for products.Also, the buyers will have the opportunity to
-            subscribe to an email list in
-            order to get announcements about new arrivals and sales promotions. Furthermore, there
-            will be an email notification after completing an order or subscribing to an email list.</p>
+        <div class="experience__item">
+            <div class="experience__content">
+                <h3>CAPGEMINI</h3>
+                <p><strong>Associate II - Software Engineer</strong><br>Aug 2021 – Oct 2023 | Bangalore, India</p>
+                <ul>
+                    <li><strong>Requirement Analysis & Design:</strong> Handled requirement gathering and breakdown.</li>
+                    <li><strong>Feature Development:</strong> Implemented RESTful features using Java & Spring.</li>
+                    <li><strong>Test Planning:</strong> Prepared test cases, UTP/UTR, and SITP/SITR.</li>
+                    <li><strong>Scripting:</strong> Utilized shell scripts for DB operations.</li>
+                    <li><strong>CI/CD Deployment:</strong> Deployed apps using GCP Cloud Build & Jenkins pipelines.</li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
 
-                <!-- <div class="work__container bd-grid">
-                    <div class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </div>
-                </div> -->
-            </section>
+<!-- Existing sections follow below -->
 
-            <!--===== CONTACT =====-->
-            <section class="resume section" id="resume">
-                <h2 class="section-title">Resume</h2>
-                <div class="about__img">
-              <center><img src="assets/img/resume.png" alt=""></center>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills__container bd-grid">
+                <div>
+                    <h3 class="skills__subtitle">Programming Languages</h3>
+                    <span class="skills__name">Java, Shell Scripting</span>
+
+                    <h3 class="skills__subtitle">Scripting</h3>
+                    <span class="skills__name">Shell</span>
+
+                    <h3 class="skills__subtitle">Frameworks</h3>
+                    <span class="skills__name">Spring, Spring Boot, Spring MVC</span>
+
+                    <h3 class="skills__subtitle">Cloud Platforms</h3>
+                    <span class="skills__name">Google Cloud Platform (GCP)</span>
+
+                    <h3 class="skills__subtitle">Web Technologies</h3>
+                    <span class="skills__name">HTML, CSS, JavaScript (Basix)</span>
+
+                    <h3 class="skills__subtitle">Databases</h3>
+                    <span class="skills__name">MySQL & Oracle</span>
+
+                    <h3 class="skills__subtitle">Tools</h3>
+                    <span class="skills__name">Git, GitLab, BitBucket, Putty, WinSCP, SoapUI, STS, IntelliJ, VSCode, Eclipse, Postman</span>
+
+                    <h3 class="skills__subtitle">Operating Systems</h3>
+                    <span class="skills__name">Windows, Linux/Ubuntu, macOS</span>
                 </div>
-                
-                <div class="contact__container bd-grid">
-                    <a href="https://drive.google.com/file/d/1bM-9UMClxLxCgxtTr8fbmSV_G5PbpvDJ/view?usp=sharing">Resume</a>
+                <div>
+                    <img src="assets/img/work3.jpg" alt="Skills Image" class="skills__img">
                 </div>
-
-
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Raveendra</p>
-            <div class="footer__social">
-                <a href="https://www.linkedin.com/in/raveendra-900a86181/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://github.com/Raveendra11?tab=repositories" class="footer__icon"><i class='bx bxl-github' ></i></a>
-                
             </div>
-  
-        </footer>
+        </section>
 
+        <!--===== PROJECTS =====-->
+<section class="project section" id="project">
+    <h2 class="section-title">Projects</h2>
+    <div class="project__container bd-grid">
+        <div class="about__img">
+            <img src="assets/img/project.png" alt="Project Image">
+        </div>
+        <div>
+            <h3 class="about__subtitle">Hughes Network Systems - Billing</h3>
+            <p class="about__text">Worked for a client Hughes, the world’s leading provider in telecommunication for broadband satellite services and managed network solutions for communities, businesses, and governments under the brand HughesNet.</p>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+            <h3 class="about__subtitle">Verizon - Chatbot</h3>
+            <p class="about__text">Worked for Verizon, the second-largest telecommunications company in the globe by revenue. Developed chatbot functionalities for Verizon's customer support. Verizon's mobile network is the largest wireless carrier in the United States.</p>
+        </div>
+    </div>
+</section>
+<section class="certificates section" id="certificates">
+    <h2 class="section-title">Certifications</h2>
+    <div class="certificates__container bd-grid">
+        <ul class="certificates__list">
+            <li>Google Cloud Associate Cloud Engineer</li>
+            <li>Google Cloud Digital Leader</li>
+        </ul>
+    </div>
+</section>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+        <!--===== RESUME =====-->
+        <section class="resume section" id="resume">
+            <h2 class="section-title">Resume</h2>
+            <div class="about__img">
+                <center><img src="assets/img/resume.png" alt="Resume Image"></center>
+            </div>
+            <div class="contact__container bd-grid">
+                <a href="https://drive.google.com/file/d/1N4YWXr_L0NEdqCF3TA5ZLbm39388im67/view?usp=sharing" target="_blank">Download Resume</a>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Raveendra Pujari</p>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/raveendra-eleven/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Raveendra11" class="footer__icon"><i class='bx bxl-github'></i></a>
+        </div>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
