@@ -203,5 +203,16 @@
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/js/main.js"></script>
+    <!--===== AUDIO =====-->
+<audio id="welcome-audio" src="assets/audio/hi.mp3"></audio>
+
+<script>
+    window.addEventListener('load', function() {
+        const audio = document.getElementById('welcome-audio');
+        audio.play().catch(error => {
+            console.log('Audio play prevented by browser:', error);
+        });
+    });
+</script>
 </body>
 </html>
