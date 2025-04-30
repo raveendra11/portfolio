@@ -22,6 +22,7 @@
                     <li class="nav__item"><a href="#certificates" class="nav__link">Certifications</a></li>
                     <li class="nav__item"><a href="#project" class="nav__link">Projects</a></li>
                     <li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
+                    <li class="nav__item"><a href="#interests" class="nav__link">Gallery</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
@@ -190,6 +191,36 @@
                 <a href="assets/Raveendra_Resume.pdf" target="_blank">view</a>
             </div>
         </section>
+
+        <!--===== INTERESTS =====-->
+<!--===== INTERESTS / GALLERY =====-->
+<!--===== INTERESTS / GALLERY =====-->
+<section class="interests section" id="interests">
+    <h2 class="section-title">Photography</h2>
+    <p style="text-align:center;">Here are a few glimpses of moments I’ve captured through my lens.</p>
+
+    <div class="gallery__container bd-grid">
+        <!-- Always-visible photos -->
+        <div class="gallery__item"><img src="assets/gallery/photo1.jpg" class="gallery__img" alt="1"></div>
+        <div class="gallery__item"><img src="assets/gallery/photo2.jpg" class="gallery__img" alt="2"></div>
+        <div class="gallery__item"><img src="assets/gallery/photo3.jpg" class="gallery__img" alt="3"></div>
+        <div class="gallery__item"><img src="assets/gallery/photo4.jpg" class="gallery__img" alt="4"></div>
+        <div class="gallery__item"><img src="assets/gallery/photo5.jpg" class="gallery__img" alt="5"></div>
+        <div class="gallery__item"><img src="assets/gallery/photo6.jpg" class="gallery__img" alt="6"></div>
+        <div class="gallery__item"><img src="assets/gallery/photo7.jpg" class="gallery__img" alt="7"></div>
+        <div class="gallery__item"><img src="assets/gallery/photo8.jpg" class="gallery__img" alt="8"></div>
+    </div>
+
+    <div style="text-align:center; margin-top: 1rem;">
+        <button id="show-more-btn" class="gallery__toggle">
+            <i class='bx bx-chevron-down'></i>
+        </button>
+    </div>
+</section>
+
+
+
+
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
             <div class="contact__container bd-grid">
@@ -270,5 +301,21 @@
         }
     });
     </script>
+    <script>
+        document.getElementById('show-more-btn').addEventListener('click', function () {
+            const hiddenGallery = document.getElementById('gallery-more');
+            const icon = this.querySelector('i');
+        
+            if (hiddenGallery.style.display === 'none') {
+                hiddenGallery.style.display = 'grid'; // or 'block' if you prefer
+                icon.classList.add('rotate');
+            } else {
+                hiddenGallery.style.display = 'none';
+                icon.classList.remove('rotate');
+            }
+        });
+        </script>
+        
+        
         </body>
 </html>
