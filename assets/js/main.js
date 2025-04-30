@@ -9,6 +9,7 @@ const showMenu = (toggleId, navId) =>{
         })
     }
 }
+
 showMenu('nav-toggle','nav-menu')
 
 /*===== ACTIVE AND REMOVE MENU =====*/
