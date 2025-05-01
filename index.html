@@ -22,7 +22,7 @@
                     <li class="nav__item"><a href="#certificates" class="nav__link">Certifications</a></li>
                     <li class="nav__item"><a href="#project" class="nav__link">Projects</a></li>
                     <li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
-                    <li class="nav__item"><a href="#interests" class="nav__link">Gallery</a></li>
+                    <li class="nav__item"><a href="#interests" class="nav__link">Interests</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
@@ -179,22 +179,7 @@
         
     </div>
 </section>
-
-
-        <!--===== RESUME =====-->
-        <section class="resume section" id="resume">
-            <h2 class="section-title">Resume</h2>
-            <div class="about__img">
-                <center><img src="assets/img/resume.png" alt="Resume Image"></center>
-            </div>
-            <div class="contact__container bd-grid">
-                <a href="assets/Raveendra_Resume.pdf" target="_blank">view</a>
-            </div>
-        </section>
-
         <!--===== INTERESTS =====-->
-<!--===== INTERESTS / GALLERY =====-->
-<!--===== INTERESTS / GALLERY =====-->
 <section class="interests section" id="interests">
     <h2 class="section-title">Photography</h2>
     <p style="text-align:center;">Here are a few glimpses of moments I’ve captured through my lens.</p>
@@ -225,8 +210,23 @@
 </section>
 
 
+        <!--===== RESUME =====-->
+        <section class="resume section" id="resume">
+            <h2 class="section-title">Resume</h2>
+            <div class="about__img">
+                <center><img src="assets/img/resume.png" alt="Resume Image"></center>
+            </div>
+            <div class="contact__container bd-grid">
+                <a href="assets/Raveendra_Resume.pdf" target="_blank">view</a>
+            </div>
+        </section>
 
 
+
+
+
+
+<!--===== CONTACT =====-->
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
             <div class="contact__container bd-grid">
@@ -321,7 +321,49 @@
             }
         });
         </script>
+        <script>
+            const images = Array.from(document.querySelectorAll('.gallery__img'));
+            const lightbox = document.getElementById('lightbox-carousel');
+            const lightboxImg = document.getElementById('carousel-img');
+            const closeBtn = document.querySelector('.lightbox__close');
+            const prevBtn = document.querySelector('.lightbox__prev');
+            const nextBtn = document.querySelector('.lightbox__next');
+            let currentIndex = 0;
+            
+            function showImage(index) {
+                lightboxImg.src = images[index].src;
+                currentIndex = index;
+                lightbox.style.display = 'flex';
+            }
+            
+            images.forEach((img, index) => {
+                img.addEventListener('click', () => showImage(index));
+            });
+            
+            closeBtn.addEventListener('click', () => {
+                lightbox.style.display = 'none';
+            });
+            
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                lightboxImg.src = images[currentIndex].src;
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % images.length;
+                lightboxImg.src = images[currentIndex].src;
+            });
+            
+            window.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.style.display = 'none';
+                }
+            });
+            </script>
+            
         
-        
+        <!-- Lightbox Carousel -->
+
+
         </body>
 </html>
