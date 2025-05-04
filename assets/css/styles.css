@@ -659,3 +659,52 @@ img{
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+.custom-carousel-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 1100px; /* 3 images x 250px + margins */
+  margin: auto;
+  overflow: hidden;
+}
+
+.custom-carousel-view {
+  overflow: hidden;
+  width: 100%;
+}
+
+.custom-carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.gallery__item {
+  flex: 0 0 250px;
+  margin: 0 8px;
+}
+
+.carousel-img {
+  width: 250px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Navigation Arrows */
+.carousel-arrow {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-arrow.left {
+  margin-right: 10px;
+}
+
+.carousel-arrow.right {
+  margin-left: 10px;
+}
