@@ -57,6 +57,17 @@ sr.reveal('.work__img',{interval: 200});
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
 
+const carousel = document.getElementById('custom-carousel');
+let scrollAmount = 0;
+const scrollStep = 266; // 250px width + 2 * 8px margin
 
+document.getElementById('scroll-left').onclick = () => {
+  scrollAmount = Math.max(0, scrollAmount - scrollStep);
+  carousel.style.transform = `translateX(-${scrollAmount}px)`;
+};
 
-
+document.getElementById('scroll-right').onclick = () => {
+  const maxScroll = carousel.scrollWidth - carousel.parentElement.clientWidth;
+  scrollAmount = Math.min(maxScroll, scrollAmount + scrollStep);
+  carousel.style.transform = `translateX(-${scrollAmount}px)`;
+};
