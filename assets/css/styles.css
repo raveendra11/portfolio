@@ -686,7 +686,7 @@ img{
 
 .carousel-img {
   width: 250px;
-  height: 500px;
+  height: 400px;
   object-fit: cover;
   border-radius: 20px;
 }
