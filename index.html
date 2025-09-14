@@ -63,57 +63,87 @@
             </div>
          </section>
          <!--===== EXPERIENCE =====-->
-         <section class="experience section" id="experience">
-            <h2 class="section-title">Experience</h2>
-            <div class="experience__container bd-grid">
-            <div class="experience__item">
-               <div class="experience__content">
-                  <h3>INFOSYS</h3>
-                  <p class="experience"><strong>Associate Business Analyst</strong><br>Apr 2024 – Jan 2025 | Bangalore, India</p>
-                  <ul>
-                     <li> • Collaborated with Verizon stakeholders to gather and analyze
- detailed business and technical requirements for chatbot
- functionalities.</li>
-                     <li> • Developed and maintained backend REST APIs (Spring Boot)
- powering Profile Bot, Billing Bot, and Account Bot, with dynamic API
- coordination for scalability.</li>
-                     <li> • Enhanced the Account Bot module by adding new changes and fixing
- critical bugs, refining API responses, improving error handling, and
- optimizing performance and maintainability.</li>
-                     <li> • Created and maintained JUnit 5 unit and integration tests, ensuring
- high coverage, stability, and quality; contributed to regression testing
- and code reviews.</li>
-                  </ul>
-               </div>
-            </div>
-            <div class="experience__item" style="margin-bottom: 2rem;">
-               <div class="experience__item">
-                  <div class="experience__content">
-                     <h3>CAPGEMINI</h3>
-                     <p><strong>Associate II - Software Engineer</strong><br>Aug 2021 – Oct 2023 | Bangalore, India</p>
-                     <ul>
-                        <li> • Took ownership of requirement analysis and design, aligning with
- leads and managers, identifying gaps, and presenting design solutions
- to stakeholders.</li>
-                     <li> • Designed and developed RESTful APIs with Spring Boot for account
- search, account history with charges/subscriptions, and invoice
- generation in PDF (iText) and XML (JAXB) formats.</li>
-                     <li> • Automated backend processes using Shell scripts, MySQL queries,
- and cron jobs, significantly reducing manual intervention for account
- updates and recurring tasks.</li>
-                     <li> • Ensured system reliability by preparing manual test plans across
- DEV/SIT/UAT and developing JUnit test cases to validate
- business-critical logic.</li>
-                     <li> • Deployed features/bug fixes with CI/CD using Google Cloud Build &
- Deploy, and gained exposure to multiple GCP services like Compute
- Engine, Cloud Storage, IAM, GKE(k8s), Load Balancer, VPC.</li>
- <li> • Collaborated closely with cross-functional teams, improving
- communication and delivery timelines.</li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </section>
+         <section class="experience section" id="experience" aria-labelledby="exp-title">
+<h2 class="section-title" id="exp-title">Experience</h2>
+
+
+<style>
+/* Experience section styles (scoped) */
+.exp-timeline { display:grid; gap:1.25rem; }
+.exp-card { position:relative; border:1px solid #e8e8e8; border-radius:16px; padding:1.25rem 1.25rem 1rem; background:#fff; box-shadow: 0 6px 18px rgba(0,0,0,.04); transition: transform .18s ease, box-shadow .18s ease; }
+.exp-card:hover { transform: translateY(-3px); box-shadow: 0 10px 22px rgba(0,0,0,.07); }
+.exp-head { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:.5rem; }
+.exp-company { display:flex; align-items:center; gap:.6rem; font-weight:700; letter-spacing:.2px; }
+.exp-role { margin:.1rem 0 .35rem; font-size:1rem; font-weight:600; }
+.exp-meta { display:flex; flex-wrap:wrap; gap:.5rem; margin:.35rem 0 .75rem; }
+.chip { display:inline-flex; align-items:center; gap:.35rem; padding:.28rem .55rem; font-size:.82rem; border-radius:999px; background:#f6f7fb; border:1px solid #eef0f6; color:#3a3d45; }
+.exp-list { margin:.5rem 0 0 1rem; }
+.exp-list li { margin:.35rem 0; line-height:1.5; }
+.exp-foot { margin-top:.9rem; display:flex; gap:.5rem; flex-wrap:wrap; }
+.tag { font-size:.78rem; border:1px dashed #dfe3ee; border-radius:8px; padding:.2rem .5rem; color:#5a5f6a; background:#fafbff; }
+
+
+@media (min-width: 820px) {
+.exp-timeline { grid-template-columns: 1fr 1fr; }
+}
+</style>
+
+
+<div class="exp-timeline">
+<!-- INFOSYS -->
+<article class="exp-card">
+<div class="exp-head">
+<div class="exp-company"><i class='bx bxs-briefcase'></i> INFOSYS</div>
+<div class="chip" title="Location"><i class='bx bx-map'></i> Bangalore, India</div>
+</div>
+<h3 class="exp-role">Associate Business Analyst</h3>
+<div class="exp-meta">
+<span class="chip" title="Duration"><i class='bx bx-time-five'></i> Apr 2024 – Jan 2025</span>
+<span class="chip" title="Domain"><i class='bx bx-bot'></i> Verizon Chatbots</span>
+</div>
+<ul class="exp-list">
+<li>Collaborated with Verizon stakeholders to gather and analyze detailed business and technical requirements for chatbot functionality.</li>
+<li>Developed and maintained Spring Boot REST APIs powering Profile, Billing, and Account bots with scalable API coordination.</li>
+<li>Enhanced the Account Bot module: refined API responses, improved error handling, fixed critical issues, and boosted maintainability.</li>
+<li>Created and maintained JUnit 5 unit & integration tests; contributed to regression testing and code reviews for overall quality.</li>
+</ul>
+<div class="exp-foot">
+<span class="tag">Spring Boot</span>
+<span class="tag">REST APIs</span>
+<span class="tag">JUnit 5</span>
+<span class="tag">API Design</span>
+</div>
+</article>
+
+
+<!-- CAPGEMINI -->
+<article class="exp-card">
+<div class="exp-head">
+<div class="exp-company"><i class='bx bxs-briefcase'></i> CAPGEMINI</div>
+<div class="chip" title="Location"><i class='bx bx-map'></i> Bangalore, India</div>
+</div>
+<h3 class="exp-role">Associate II – Software Engineer</h3>
+<div class="exp-meta">
+<span class="chip" title="Duration"><i class='bx bx-time-five'></i> Aug 2021 – Oct 2023</span>
+<span class="chip" title="Domain"><i class='bx bx-receipt'></i> Billing & Invoicing</span>
+</div>
+<ul class="exp-list">
+<li>Owned requirement analysis & design; aligned with leads/managers, identified gaps, and presented solutions to stakeholders.</li>
+<li>Built RESTful services for account search/history and invoice generation (PDF via iText, XML via JAXB) using Spring Boot.</li>
+<li>Automated backend tasks using Shell scripts, MySQL, and cron jobs; reduced manual intervention for recurring updates.</li>
+<li>Improved reliability with test plans across DEV/SIT/UAT and comprehensive JUnit coverage for business‑critical logic.</li>
+<li>Delivered via CI/CD using Google Cloud Build & Deploy; exposure to Compute Engine, Cloud Storage, IAM, GKE, Load Balancer, VPC.</li>
+</ul>
+<div class="exp-foot">
+<span class="tag">Spring Boot</span>
+<span class="tag">iText / JAXB</span>
+<span class="tag">Shell & MySQL</span>
+<span class="tag">CI/CD</span>
+<span class="tag">GCP</span>
+</div>
+</article>
+</div>
+</section>
          <!--===== SKILLS =====-->
          <section class="skills section" id="skills">
             <h2 class="section-title">Skills</h2>
@@ -361,6 +391,7 @@
       </script>
    </body>
 </html>
+
 
 
 
