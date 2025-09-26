@@ -92,7 +92,31 @@
     border-top: 3px solid transparent;
     border-image: linear-gradient(90deg, var(--grad-1), var(--grad-2)) 1;
   }
-  
+  /* === Match cards to page background === */
+.exp-card, .cert-card{
+  background: linear-gradient(135deg, var(--bg-top), var(--bg-mid)) !important;
+  border-radius: 16px;
+  border: 1px solid rgba(99,102,241,0.12) !important;
+  box-shadow: 0 6px 18px rgba(99,102,241,0.08) !important;
+}
+.exp-card:hover, .cert-card:hover{
+  background: linear-gradient(135deg, var(--bg-top), var(--bg-mid)) !important;
+  border-color: rgba(99,102,241,0.28) !important;
+  box-shadow: 0 10px 22px rgba(99,102,241,0.12) !important;
+}
+.exp-card, .cert-card{
+  background: rgba(255,255,255,0.55) !important; /* translucent */
+  backdrop-filter: saturate(120%) blur(6px);
+  -webkit-backdrop-filter: saturate(120%) blur(6px);
+  border-radius: 16px;
+  border: 1px solid rgba(99,102,241,0.16);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+.exp-card:hover, .cert-card:hover{
+  border-color: rgba(99,102,241,0.28);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
+
 </style>
 
    </head>
@@ -139,15 +163,25 @@
                <div class="about__img">
                   <img src="assets/img/about.jpg" alt="About Image">
                </div>
-               <div>
-                  <p class="about__text">
-  I’m an experienced <b>Java developer</b> with a strong background in designing and building scalable applications on the <b>Google Cloud Platform (GCP)</b>. My expertise lies in creating robust <strong>REST APIs</strong> using <strong>Spring Boot</strong>, integrating databases, and deploying solutions in cloud-native environments. 
-  <br><br>
-  Over the years, I’ve worked on enterprise projects involving end-to-end API development, automation, and performance optimization, ensuring high availability and reliability. I am comfortable collaborating with cross-functional teams and adapting quickly to new technologies. 
-  <br><br>
-  Beyond professional experience, I am also passionate about using technology for social impact. One of my personal projects, <a href="https://wedogood.help" target="_blank">doGood</a>, is a charity platform designed to support orphan children and elders by enabling donations of goods—such as clothes, food, and books—rather than money. This project reflects both my technical expertise and my commitment to building meaningful solutions.
-</p>
-               </div>
+              <div>
+  <p class="about__text">
+    Hello, my name is <b>Raveendra Pujari</b>. I'm a <b>Java Spring Boot developer</b> with experience in developing and enhancing applications. 
+    I specialize in building backend services like <strong>RESTful APIs</strong> using <strong>Spring Boot</strong> and have a good foundation in <b>Oracle SQL</b>. 
+    I’m also skilled in <b>Shell scripting</b>, which I use to automate processes and improve operational efficiency.
+    <br><br>
+    I have hands-on experience with the <b>Google Cloud Platform (GCP)</b>, leveraging its services to deploy, manage, and scale applications in cloud environments. 
+    Additionally, I hold <b>GCP certifications</b> ranging from foundational to professional levels.
+    <br><br>
+    Explore my personal project <b>doGood</b> at the featured section — 
+    a charity aimed at supporting orphan children and elders by fellow friends. 
+    The platform is designed to simplify and encourage donations of goods like clothes, food, and books rather than money. 
+    Currently, the project is under active development. 
+    Utilized <b>MySQL</b> for data storage, <b>Spring Boot</b> for a RESTful API backend, and <b>ReactJS</b> for the user interface, along with <b>Google Cloud Platform</b> for deployment.
+    <br><br>
+    I’m passionate about continuous learning and staying up to date with the latest technologies.
+  </p>
+</div>
+
             </div>
          </section>
          <!--===== EXPERIENCE =====-->
@@ -190,12 +224,12 @@
 <span class="chip" title="Domain"><i class='bx bx-bot'></i> Verizon Chatbots</span>
 </div>
 <ul class="exp-list">
-  <li>Designed and documented REST APIs to streamline frontend–backend communication and system integration.</li>
-  <li>Gathered and analyzed business and technical requirements for chatbot features with Verizon stakeholders.</li>
-  <li>Developed and maintained backend for Profile, Billing, and Account Bots with scalable, modular coordination.</li>
-  <li>Enhanced Account Bot by refining responses, improving error handling, and optimizing performance and maintainability.</li>
-  <li>Developed 20+ JUnit 5 unit and integration tests and contributed to peer code reviews, raising code coverage to 85%.</li>
-  <li>Participated in Agile development, including sprint planning and retrospectives, contributing to improved team productivity.</li>
+  <li>•	Designed and documented REST APIs to streamline frontend–backend communication and system integration.</li>
+  <li>•	Gathered and analyzed business and technical requirements for chatbot features with Verizon stakeholders.</li>
+  <li>•	Developed and maintained backend for Profile, Billing, and Account Bots with scalable, modular coordination.</li>
+  <li>•	Enhanced Account Bot by refining responses, improving error handling, and optimizing performance and maintainability.</li>
+  <li>•	Developed 20+ JUnit 5 unit and integration tests and contributed to peer code reviews, raising code coverage to 85%.</li>
+  <li>•	Participated in Agile development, including sprint planning and retrospectives, contributing to improved team productivity.</li>
 </ul>
 <div class="exp-foot">
 <span class="tag">Spring Boot</span>
@@ -218,14 +252,14 @@
 <span class="chip" title="Domain"><i class='bx bx-receipt'></i> Billing & Invoicing</span>
 </div>
 <ul class="exp-list">
-  <li>Owned requirement analysis and design; worked with leads and managers to identify gaps and present solutions to stakeholders.</li>
-  <li>Designed and developed RESTful APIs for account search and history, charges and subscriptions, and invoice generation in PDF.</li>
-  <li>Automated backend processes with Shell scripts and cron jobs, cutting manual effort for account updates by 40%.</li>
-  <li>Improved reliability with manual test plans across DEV, SIT, UAT and wrote JUnit test cases for business-critical logic.</li>
-  <li>Deployed features and bug fixes with CI/CD using Google Cloud Build and Cloud Deploy, integrating deployments with GCP Services including Compute Engine, Storage, IAM, GKE, Load Balancer, VPC.</li>
-  <li>Improved sprint delivery timelines through cross-functional coordination.</li>
-  <li>Configured CI/CD pipelines with Google Cloud to streamline feature releases and reduce deployment errors.</li>
-  <li>Integrated Spring Boot microservices with external APIs and internal modules, ensuring seamless data flow across billing.</li>
+  <li>•	Owned requirement analysis and design; worked with leads and managers to identify gaps and present solutions to stakeholders.</li>
+  <li>•	Designed and developed RESTful APIs for account search and history, charges and subscriptions, and invoice generation in PDF.</li>
+  <li>•	Automated backend processes with Shell scripts and cron jobs, cutting manual effort for account updates by 40%.</li>
+  <li>•	Improved reliability with manual test plans across DEV, SIT, UAT and wrote JUnit test cases for business-critical logic.</li>
+  <li>•	Deployed features and bug fixes with CI/CD using Google Cloud Build and Cloud Deploy, integrating deployments with GCP Services including Compute Engine, Storage, IAM, GKE, Load Balancer, VPC.</li>
+  <li>•	Improved sprint delivery timelines through cross-functional coordination.</li>
+  <li>•	Configured CI/CD pipelines with Google Cloud to streamline feature releases and reduce deployment errors.</li>
+  <li>•	Integrated Spring Boot microservices with external APIs and internal modules, ensuring seamless data flow across billing.</li>
 </ul>
 <div class="exp-foot">
 <span class="tag">Spring Boot</span>
@@ -265,7 +299,7 @@
 <span class="chip" title="Domain"><i class='bx bx-receipt'></i>doGood</span>
 </div>
 <ul class="exp-list">
-<li><b><a href="https://wedogood.help" target="_blank">doGood</a></b> is a personal project for charity, aimed at supporting orphan children and elders by fellow friends. The platform is designed to simplify and encourage donations of goods (like clothes, food, and books) rather than money. Currently, the project is under active development.</li>
+<li><b><a href="https://wedogood.help" target="_blank">•	doGood</a></b> is a personal project for charity, aimed at supporting orphan children and elders by fellow friends. The platform is designed to simplify and encourage donations of goods (like clothes, food, and books) rather than money. Currently, the project is under active development.</li>
 </ul>
 <div class="exp-foot">
 <span class="tag">Java</span>
@@ -284,24 +318,30 @@
                <!-- Left Column -->
                <div>
                   <h3 class="skills__subtitle">Programming Languages</h3>
-                  <span class="skills__name">Java & Python(Basics)</span>
+                  <span class="skills__name">C, Java</span>
                   <h3 class="skills__subtitle">Frameworks</h3>
                   <span class="skills__name">Spring, Spring Boot & Spring MVC</span>
                   <h3 class="skills__subtitle">Web Technologies</h3>
-                  <span class="skills__name">HTML, CSS & JavaScript (Basics)</span>
+                  <span class="skills__name">HTML, CSS, JavaScript, React</span>
                   <h3 class="skills__subtitle">Tools</h3>
-                  <span class="skills__name">Git, GitLab, BitBucket, Putty, WinSCP, SoapUI, STS, IntelliJ, VSCode, Eclipse, Postman</span>
+                  <span class="skills__name"> Git, GitLab, Bitbucket, Maven, Jira, VS Code, Eclipse, Postman, PuTTY, WinSCP, SoapUI, Linux, SonarQube, Iac, Terraform.</span>
+               <h3 class="skills__subtitle">Cloud & Deployment</h3>
+               <span class="skills__name">Google Cloud Platform(GCP), Compute, Storage, Networking, Docker, Kubernetes(GKE), Jenkins, CI/CD Pipelines, Shell, GitHub.</span>
+ 
                </div>
                <!-- Right Column -->
                <div>
-                  <h3 class="skills__subtitle">Scripting</h3>
-                  <span class="skills__name">Shell</span>
                   <h3 class="skills__subtitle">Cloud Platforms</h3>
                   <span class="skills__name">Google Cloud Platform (GCP)</span>
                   <h3 class="skills__subtitle">Databases</h3>
-                  <span class="skills__name">MySQL & Oracle</span>
-                  <h3 class="skills__subtitle">Operating Systems</h3>
-                  <span class="skills__name">Windows, Linux/Ubuntu & macOS</span>
+                  <span class="skills__name"> MySQL, Oracle & MongoDB.</span>
+                   <h3 class="skills__subtitle">Data Structures & Algorithms</h3>
+                 <span class="skills__name">Sorting, Searching.</span>
+                    <h3 class="skills__subtitle">Testing & Debugging<h3></h3>
+                  <span class="skills__name">JUnit, Mockito.</span>
+                  <h3 class="skills__subtitle">Design Patterns & Methodologies</h3>
+               <span class="skills__name">Agile, Scrum, Kanban, Singleton.</span>
+
                </div>
             </div>
          </section>
@@ -312,10 +352,20 @@
                <div class="about__img">
                   <img src="assets/img/project.png" alt="Project Image">
                </div>
-               <div>
-                  <h3 class="about__subtitle">doGood</h3>
-                  <p class="about__text">doGood is a personal project for charity, aimed at supporting orphan children and elders by fellow friends. The platform is designed to simplify and encourage donations of goods like clothes, food, and books rather than money. Currently, the project is under active development.</p>
-               </div>
+              <div>
+  <h3 class="about__subtitle">
+    doGood
+    <a href="https://wedogood.help" target="_blank" class="ext-link">
+      <i class='bx bx-link-external'></i>
+    </a>
+  </h3>
+  <p class="about__text">
+    doGood is a personal project for charity, aimed at supporting orphan children and elders by fellow friends. 
+    The platform is designed to simplify and encourage donations of goods like clothes, food, and books rather than money. 
+    Currently, the project is under active development.
+  </p>
+</div>
+
             </div>
          </section>
         <section class="certificates section" id="certificates" aria-labelledby="cert-title">
@@ -376,44 +426,55 @@
 </section>
          <!--===== INTERESTS =====-->
          <section class="interests section" id="interests">
-            <h2 class="section-title">Photography</h2>
-            <p style="text-align:center;">Here are a few glimpses of moments I’ve captured through my lens.</p>
-            <!-- Carousel Wrapper -->
-            <div class="custom-carousel-container">
-               <div class="custom-carousel-wrapper">
-                  <button class="carousel-arrow left" id="scroll-left">&#10094;</button>
-                  <div class="custom-carousel-view">
-                     <div class="custom-carousel-track" id="custom-carousel">
-                        <div class="gallery__item"><img src="assets/gallery/photo1.jpg" class="carousel-img" alt="1"></div>
-                        <div class="gallery__item"><img src="assets/gallery/photo2.jpg" class="carousel-img" alt="2"></div>
-                        <div class="gallery__item"><img src="assets/gallery/photo3.jpg" class="carousel-img" alt="3"></div>
-                        <div class="gallery__item"><img src="assets/gallery/photo4.jpg" class="carousel-img" alt="4"></div>
-                        <div class="gallery__item"><img src="assets/gallery/photo5.jpg" class="carousel-img" alt="5"></div>
-                        <div class="gallery__item"><img src="assets/gallery/photo6.jpg" class="carousel-img" alt="6"></div>
-                        <div class="gallery__item"><img src="assets/gallery/photo7.jpg" class="gallery__img" alt="7"></div>
-                        <div class="gallery__item"><img src="assets/gallery/photo8.jpg" class="gallery__img" alt="8"></div>
-                        <div class="gallery__item"><img src="assets/gallery/photo9.jpg" class="gallery__img" alt="9"></div>
-                        <div class="gallery__item"><img src="assets/gallery/photo10.jpg" class="gallery__img" alt="9"></div>
-                        <div class="gallery__item"><img src="assets/gallery/photo11.jpg" class="gallery__img" alt="9"></div>
-                        <div class="gallery__item"><img src="assets/gallery/photo12.jpg" class="gallery__img" alt="9"></div>
-                     </div>
-                  </div>
-                  <button class="carousel-arrow right" id="scroll-right">&#10095;</button>
-               </div>
-            </div>
-         </section>
+  <h2 class="section-title">Photography</h2>
+  <p style="text-align:center; margin-bottom: 25px;">
+    Here are a few glimpses of moments I’ve captured through my lens.
+  </p>
+  <!-- Carousel Wrapper -->
+  <div class="custom-carousel-container">
+    <div class="custom-carousel-wrapper">
+      <button class="carousel-arrow left" id="scroll-left">&#10094;</button>
+      <div class="custom-carousel-view">
+        <div class="custom-carousel-track" id="custom-carousel">
+          <div class="gallery__item"><img src="assets/gallery/photo1.jpg" class="carousel-img" alt="1"></div>
+          <div class="gallery__item"><img src="assets/gallery/photo2.jpg" class="carousel-img" alt="2"></div>
+          <div class="gallery__item"><img src="assets/gallery/photo3.jpg" class="carousel-img" alt="3"></div>
+          <div class="gallery__item"><img src="assets/gallery/photo4.jpg" class="carousel-img" alt="4"></div>
+          <div class="gallery__item"><img src="assets/gallery/photo5.jpg" class="carousel-img" alt="5"></div>
+          <div class="gallery__item"><img src="assets/gallery/photo6.jpg" class="carousel-img" alt="6"></div>
+          <div class="gallery__item"><img src="assets/gallery/photo7.jpg" class="gallery__img" alt="7"></div>
+          <div class="gallery__item"><img src="assets/gallery/photo8.jpg" class="gallery__img" alt="8"></div>
+          <div class="gallery__item"><img src="assets/gallery/photo9.jpg" class="gallery__img" alt="9"></div>
+          <div class="gallery__item"><img src="assets/gallery/photo10.jpg" class="gallery__img" alt="10"></div>
+          <div class="gallery__item"><img src="assets/gallery/photo11.jpg" class="gallery__img" alt="11"></div>
+          <div class="gallery__item"><img src="assets/gallery/photo12.jpg" class="gallery__img" alt="12"></div>
+        </div>
+      </div>
+      <button class="carousel-arrow right" id="scroll-right">&#10095;</button>
+    </div>
+  </div>
+</section>
+
          <!--===== RESUME =====-->
-         <section class="resume section" id="resume">
-            <h2 class="section-title">Resume</h2>
-            <div class="about__img">
-               <center><img src="assets/img/resume.png" alt="Resume Image" style="max-width: 150%; height: auto;"></center>
-            </div>
-            <div class="contact__container bd-grid" style="text-align: center; margin-top: 1rem;">
-               <a href="assets/Raveendra_Pujari_Resume_Dec26.pdf" target="_blank" class="view-button">
-               <i class='bx bx-show'></i>
-               </a>
-            </div>
-         </section>
+         <!--===== RESUME =====-->
+<section class="resume section" id="resume">
+  <h2 class="section-title">Resume</h2>
+  <div class="about__img">
+    <center>
+      <img src="assets/img/resume.png" alt="Resume Image" 
+           style="max-width: 150%; height: auto; cursor: pointer;"
+           onclick="window.open('assets/Raveendra_Pujari_Resume_Dec26.pdf', 'ResumeWindow', 'width=900,height=700,scrollbars=yes,resizable=yes');">
+    </center>
+  </div>
+  <div class="contact__container bd-grid" style="text-align: center; margin-top: 1rem;">
+    <a href="javascript:void(0)" 
+       onclick="window.open('assets/Raveendra_Pujari_Resume_Dec26.pdf', 'ResumeWindow', 'width=900,height=700,scrollbars=yes,resizable=yes');" 
+       class="view-button">
+      <i class='bx bx-show'></i>
+    </a>
+  </div>
+</section>
+
          <!--===== CONTACT =====-->
          <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>

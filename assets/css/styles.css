@@ -12,6 +12,16 @@
   --first-color: #4070F4;
   --second-color: #0E2431;
 }
+.ext-link {
+  margin-left: 1px;
+  font-size: 1rem;   /* size of icon */
+  color: inherit;    /* matches the text color */
+  text-decoration: none;
+}
+
+.ext-link:hover {
+  color: #4070f4; /* hover highlight color */
+}
 
 /*===== Fuente y tipografia =====*/
 :root{
