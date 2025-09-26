@@ -6,23 +6,6 @@
   --font-semi: 600;
 }
 
-:root{
-  --bg-start:#f7f8fc; /* near-white */
-  --bg-end:#eef2ff;   /* soft indigo tint */
-  --text:#1f2937;     /* slate-800 */
-}
-body{
-  color:var(--text);
-  background:
-    radial-gradient(1200px 600px at 10% -10%, #ffffff80, transparent 60%),
-    linear-gradient(180deg, var(--bg-start), var(--bg-end));
-  background-attachment: fixed;
-}
-section, .exp-card, .cert-card{
-  background: #ffffff; 
-  backdrop-filter: saturate(120%) blur(0px);
-}
-
 
 /*===== Colores =====*/
 :root{
